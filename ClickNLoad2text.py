@@ -183,7 +183,7 @@ def jk_eval(f_def):
 	}
 	"""
 	# Rhino
-	js_cmd = ["jsscript-1.6", "-e", f_def + ";" + f_call]
+	js_cmd = ["rhino", "-e", f_def + ";" + f_call]
 	# NodeJS
 	#js_cmd = ["node", "-e", f_def + ";" + f_call]
 	return call(js_cmd).strip()
